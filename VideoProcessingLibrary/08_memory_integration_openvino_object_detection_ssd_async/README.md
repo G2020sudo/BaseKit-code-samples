@@ -62,11 +62,14 @@ To run the demo :
 xhost local:root
 docker run --privileged -it --rm -e DISPLAY=:0 -v /tmp/.X11-unix:/tmp/.X11-unix oneapivpl_openvino:2020.1.beta05_2020.2.120 ./run-vpl-demo.sh /opt/intel/openvino/vpl/face-demographics-walking-and-pause_h264.avi CPU GPU /opt/intel/openvino/vpl/build/intel/face-detection-retail-0005/FP32/face-detection-retail-0005.xml
 
-The above command starts the demo using run-vpl-demo.sh script. The run-vpl-demo script takes the following args: <H264_VIDEO_FILE.AVI> <MEDIA_DECODE_DEVICE> <INFERENCE_DEVICE> <MODEL>
+The above command starts the demo using run-vpl-demo.sh script. The run-vpl-demo script takes the following args: <H264_VIDEO_FILE.AVI> <MEDIA_DECODE_DEVICE> <INFERENCE_DEVICE> <MODEL_PATH_FILENAME>
 
 MEDIA_DECODE_DEVICE options are : GPU or CPU
+
 INFERENCE_DEVICE options are: GPU or CPU
-MODEL : full path and name to an Intel® OpenVINO™ Toolkit compatible model such as https://github.com/opencv/open_model_zoo/tree/master/models/intel. Note that this demo only support object detection/recognition models.
+
+MODEL_PATH_FILENAME : full path and name to an Intel® OpenVINO™ Toolkit compatible model such as https://github.com/opencv/open_model_zoo/tree/master/models/intel. Note that this demo only support object detection/recognition models.
+
 
 I encourage everyone to test different combinations of media and analytics devices and analytics models. For example:
 
