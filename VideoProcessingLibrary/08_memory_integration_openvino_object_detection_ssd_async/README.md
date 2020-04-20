@@ -9,6 +9,8 @@ be easily offloaded from CPU to GPU with no code changes. Both IntelÂ® OpenVINOâ
 
 This sample also utilizes C++17 for thread-safety.
 
+<img src="https://github.com/G2020sudo/BaseKit-code-samples/blob/2020.1-beta05-OpenVINO/VideoProcessingLibrary/08_memory_integration_openvino_object_detection_ssd_async/oneAPI_OpenVINO_Sample.png" />
+
 | Optimized for   | Description
 |---------------- | ----------------------------------------
 | OS              | Ubuntu* 18.04 (tested); Windows* 10 (not tested)
